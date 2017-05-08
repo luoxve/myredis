@@ -8,7 +8,7 @@ public class Chapter01 {
     }
 
     public void run() {
-        Jedis conn = new Jedis("192.168.1.104", 6379);
+        Jedis conn = new Jedis("192.168.1.102", 6379);
 //        conn.select(15);
         conn.set("foo", "bar");
         System.out.println(conn.get("foo"));
